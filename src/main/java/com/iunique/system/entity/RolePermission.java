@@ -86,7 +86,9 @@ public class RolePermission implements Serializable {
     /**
      * 数据权限
      */
-    private String dataRuleIds;
+    private String dataRuleReadIds;
+
+    private String dataRuleWriteIds;
 
     public RolePermission() {
    	}

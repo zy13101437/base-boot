@@ -1,5 +1,6 @@
 package com.iunique.system.entity;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -18,6 +19,7 @@ import java.util.Date;
 @EqualsAndHashCode(callSuper = false)
 @ApiModel(value = "系统用户实体表")
 @Table(name = "sys_user")
+@TableName("sys_user")
 public class User implements Serializable {
 
 

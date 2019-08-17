@@ -1,10 +1,10 @@
 package com.iunique.system.entity;
 
 import com.iunique.base.BaseApplicationTests;
+import com.iunique.system.mapper.UserMapper;
 import com.iunique.system.repository.*;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-
 
 public class TestDB extends BaseApplicationTests {
 
@@ -29,6 +29,9 @@ public class TestDB extends BaseApplicationTests {
     @Autowired
     UserRoleRepository userRoleRepository;
 
+    @Autowired
+    private UserMapper userMapper;
+
 
     @Test
     public void test1() {
@@ -44,6 +47,8 @@ public class TestDB extends BaseApplicationTests {
         UserRole userRole = new UserRole();
 
 
+
+
         department.setId((long) 1);
         dict.setId((long) 1);
         log.setId((long) 1);
@@ -54,9 +59,6 @@ public class TestDB extends BaseApplicationTests {
         user.setId((long) 1);
         userDepart.setId((long) 1);
         userRole.setId((long) 1);
-
-
-
 
 
         departmentRepository.save(department);
@@ -73,4 +75,11 @@ public class TestDB extends BaseApplicationTests {
 
     }
 
+
+    @Test
+    public void testMapper() {
+        User user = userMapper.selectById(1);
+        System.out.println(user);
+
+    }
 }

@@ -77,7 +77,7 @@ public class PermissionDataRule implements Serializable {
 	 * 对应的菜单id
 	 */
 	private Long permissionId;
-	
+
 	/**
 	 * 规则名称
 	 */
