@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(exclude= {DruidDataSourceAutoConfigure.class})
-@MapperScan("com.iunique.system")
+@MapperScan("com.iunique.system.mapper")
 public class BaseApplication {
 
     public static void main(String[] args) {

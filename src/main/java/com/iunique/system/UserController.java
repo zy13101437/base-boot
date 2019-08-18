@@ -43,7 +43,8 @@ public class UserController {
     @PostMapping("list")
     @ApiOperation(httpMethod = "post", response = WebResult.class, value = "查询用户列表", notes = "查询用户列表")
     public WebResult selectList(@RequestBody @ApiParam(name = "分页DTO", required = true) CollectionDTO collectionDTO) {
-        WebResult webResult = userService.selectList(collectionDTO.getPageDTO(), collectionDTO.getUser());
+        System.out.println(collectionDTO);
+        WebResult webResult = userService.selectUserList(collectionDTO.getPageDTO(), collectionDTO.getUser());
         return webResult;
     }
 

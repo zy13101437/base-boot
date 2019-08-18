@@ -9,5 +9,5 @@ public interface UserService {
 
     WebResult saveUser(User user);
 
-    WebResult selectList(PageDTO pageDto, User user);
+    WebResult selectUserList(PageDTO pageDto, User user);
 }

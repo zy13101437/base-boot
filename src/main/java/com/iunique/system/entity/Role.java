@@ -44,7 +44,7 @@ public class Role implements Serializable {
      * 创建日期
      */
     @ApiModelProperty(value = "创建日期")
-    protected Date createDate= new Date();;	// 创建日期
+    protected Date createDate;	// 创建日期
 
     /**
      * 更新者
@@ -56,13 +56,13 @@ public class Role implements Serializable {
      * 更新日期
      */
     @ApiModelProperty(value = "更新日期")
-    protected Date updateDate = new Date();	// 更新日期
+    protected Date updateDate ;	// 更新日期
 
     /**
      * 删除标记
      */
     @ApiModelProperty(value = "删除标记")
-    protected String delFlag = "0"; 	// 删除标记（0：正常；1：删除；2：审核）
+    protected String delFlag; 	// 删除标记（0：正常；1：删除；2：审核）
 
 
 
